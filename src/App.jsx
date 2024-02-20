@@ -166,7 +166,7 @@ function App() {
 
        
     </div>
-      <div onClick={apply}>Test</div>
+      <div onClick={apply} style={{cursor:'pointer'}}>Generate</div>
       
     </>
   )
