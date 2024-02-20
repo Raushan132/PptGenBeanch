@@ -40,7 +40,7 @@ function App() {
     pptx.defineLayout({name:'Custom', width:13, height:8});
     let slide = pptx.addSlide();
   
-    slide.addText( `BLOCK: ${blockName}`, {
+    slide.addText( `BLOCK: ${blockName.toUpperCase()}`, {
       shape: pptx.ShapeType.roundRect,
       w: 12,
       h: 0.8,
@@ -53,7 +53,7 @@ function App() {
       fontFace: "Aharoni",
       color:"#ffffff"
     })
-    slide.addText( `Inspection Officer:${officer.name}, ${officer.post}`, {
+    slide.addText( `Inspection Officer:${officer.name.toUpperCase()}, ${officer.post.toUpperCase()}`, {
       shape: pptx.ShapeType.roundRect,
       w: 6,
       h: 0.5,
@@ -65,7 +65,7 @@ function App() {
       fontFace: "Arial"
     })
 
-    slide.addText( `School Name: ${schoolName}`, {
+    slide.addText( `School Name: ${schoolName.toUpperCase()}`, {
       shape: pptx.ShapeType.roundRect,
       w: 6,
       h: 0.5,
@@ -78,7 +78,7 @@ function App() {
       fontFace: "Arial"
     })
 
-    slide.addText( `SUPPLIED BY ${supplier}`, {
+    slide.addText( `SUPPLIED BY ${supplier.toUpperCase()}`, {
       shape: pptx.ShapeType.roundRect,
       w: 5,
       h: 0.5,
